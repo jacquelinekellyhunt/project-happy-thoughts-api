@@ -58,7 +58,7 @@ const port = process.env.PORT || 8080
 
 // Middlewares
 app.use(cors({
-  origin: 'https://my-happy-thoughts-frontend.netlify.app', 
+  origin: 'https://happiestthoughts.netlify.app', 
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }))
