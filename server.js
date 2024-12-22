@@ -70,6 +70,7 @@ app.use(express.json())
 
 // Root endpoint - shows available endpoints in JSON
 app.get('/', (req, res) => {
+  console.log('REQ.BODY =>', req.body);
   res.json({
     message: 'Welcome to the Happy Thoughts API!',
     endpoints: listEndpoints(app)
